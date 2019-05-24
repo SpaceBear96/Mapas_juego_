@@ -60,7 +60,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDelega
             return pinView
         }
         let pinView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
-        pinView.image = UIImage(named:"mew")
+        pinView.image = UIImage(named:"meowth")
         var frame = pinView.frame
         frame.size.height = 50
         frame.size.width = 50

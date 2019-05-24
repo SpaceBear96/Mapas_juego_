@@ -40,7 +40,7 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="pokeball"/>
                                 <connections>
-                                    <segue destination="vlh-KB-iro" kind="presentation" id="H08-lh-xXP"/>
+                                    <segue destination="vlh-KB-iro" kind="presentation" id="qCN-To-lTb"/>
                                 </connections>
                             </button>
                         </subviews>

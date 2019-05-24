@@ -3,8 +3,11 @@ import UIKit
 import CoreData
 
 func agregarPokemons(){
-    crearPokemon(xnombre: "Mew", ximagenNombre: "mew")
     crearPokemon(xnombre: "Meowth", ximagenNombre: "meowth")
+    crearPokemon(xnombre: "Pikachu", ximagenNombre: "pikachu")
+    crearPokemon(xnombre: "Zubat", ximagenNombre: "zubat")
+    crearPokemon(xnombre: "Snorlax", ximagenNombre: "snorlax")
+    crearPokemon(xnombre: "Squirtle", ximagenNombre: "squirtle")
     (UIApplication.shared.delegate as! AppDelegate).saveContext()
 }
 
