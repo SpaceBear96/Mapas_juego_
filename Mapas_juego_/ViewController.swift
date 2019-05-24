@@ -8,7 +8,7 @@
 
 import UIKit
 import MapKit
-class ViewController: UIViewController,CLLocationManagerDelegate {
+class ViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     var ubicacion = CLLocationManager()
@@ -19,6 +19,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         ubicacion.delegate = self
         pokemons = obtenerPokemons()
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse{
+           mapView.delegate = self
            mapView.showsUserLocation = true
            ubicacion.startUpdatingHeading()
             Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: {(timer) in
@@ -47,7 +48,27 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         }
         
     }
-
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation{
+            let pinView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
+            pinView.image = UIImage(named:"player")
+            var frame = pinView.frame
+            frame.size.height = 50
+            frame.size.width = 50
+            pinView.frame = frame
+            return pinView
+        }
+        let pinView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
+        pinView.image = UIImage(named:"mew")
+        var frame = pinView.frame
+        frame.size.height = 50
+        frame.size.width = 50
+        pinView.frame = frame
+        return pinView
+        
+        
+    }
 
     @IBAction func centrarTapped(_ sender: Any) {
         if let coord = ubicacion.location?.coordinate{
