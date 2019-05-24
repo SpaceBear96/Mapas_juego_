@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E6AACB32298923C0077748F /* PokedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6AACB22298923C0077748F /* PokedexViewController.swift */; };
+		0E6AACB5229896310077748F /* Funciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6AACB4229896310077748F /* Funciones.swift */; };
 		0EBD8D0E228F571C008147A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD8D0D228F571C008147A8 /* AppDelegate.swift */; };
 		0EBD8D10228F571C008147A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBD8D0F228F571C008147A8 /* ViewController.swift */; };
 		0EBD8D13228F571C008147A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBD8D11228F571C008147A8 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E6AACB22298923C0077748F /* PokedexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewController.swift; sourceTree = "<group>"; };
+		0E6AACB4229896310077748F /* Funciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funciones.swift; sourceTree = "<group>"; };
 		0EBD8D0A228F571C008147A8 /* Mapas_juego_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapas_juego_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBD8D0D228F571C008147A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EBD8D0F228F571C008147A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 				0EBD8D19228F5722008147A8 /* LaunchScreen.storyboard */,
 				0EBD8D1C228F5722008147A8 /* Info.plist */,
 				0EBD8D14228F571C008147A8 /* Mapas_juego_.xcdatamodeld */,
+				0E6AACB22298923C0077748F /* PokedexViewController.swift */,
+				0E6AACB4229896310077748F /* Funciones.swift */,
 			);
 			path = Mapas_juego_;
 			sourceTree = "<group>";
@@ -151,8 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EBD8D10228F571C008147A8 /* ViewController.swift in Sources */,
+				0E6AACB32298923C0077748F /* PokedexViewController.swift in Sources */,
 				0EBD8D0E228F571C008147A8 /* AppDelegate.swift in Sources */,
 				0EBD8D16228F571C008147A8 /* Mapas_juego_.xcdatamodeld in Sources */,
+				0E6AACB5229896310077748F /* Funciones.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

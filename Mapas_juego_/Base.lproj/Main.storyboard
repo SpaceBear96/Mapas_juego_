@@ -40,7 +40,7 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="pokeball"/>
                                 <connections>
-                                    <segue destination="vlh-KB-iro" kind="presentation" id="2Sz-Kf-bqZ"/>
+                                    <segue destination="vlh-KB-iro" kind="presentation" id="H08-lh-xXP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,45 +63,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-198" y="44"/>
+            <point key="canvasLocation" x="-306" y="44"/>
         </scene>
-        <!--View Controller-->
+        <!--Pokedex View Controller-->
         <scene sceneID="XpN-kC-uT2">
             <objects>
-                <viewController id="vlh-KB-iro" sceneMemberID="viewController">
+                <viewController id="vlh-KB-iro" customClass="PokedexViewController" customModule="Mapas_juego_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Kp-RH-c7K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sII-J7-csu">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnL-RK-ye3">
-                                <rect key="frame" x="164" y="597" width="46" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGO-ZV-dEl">
+                                <rect key="frame" x="162.5" y="597" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="cF1-7N-CP7"/>
-                                    <constraint firstAttribute="width" constant="50" id="gdf-GC-iKx"/>
-                                    <constraint firstAttribute="height" constant="50" id="z8t-44-Y6V"/>
+                                    <constraint firstAttribute="height" constant="50" id="6XG-oN-bDd"/>
+                                    <constraint firstAttribute="width" constant="50" id="CTN-aX-gj3"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="map"/>
+                                <connections>
+                                    <action selector="mapTapped:" destination="vlh-KB-iro" eventType="touchUpInside" id="TFo-bA-kCy"/>
+                                </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aP6-YC-108">
+                                <rect key="frame" x="0.0" y="20" width="375" height="577"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="sII-J7-csu" firstAttribute="top" secondItem="gJ3-hZ-Zjw" secondAttribute="top" id="7uI-xY-qdN"/>
-                            <constraint firstItem="sII-J7-csu" firstAttribute="top" secondItem="gJ3-hZ-Zjw" secondAttribute="top" id="ARd-oD-wfd"/>
-                            <constraint firstItem="sII-J7-csu" firstAttribute="leading" secondItem="gJ3-hZ-Zjw" secondAttribute="leading" id="CQs-Ou-6wE"/>
-                            <constraint firstItem="sII-J7-csu" firstAttribute="leading" secondItem="gJ3-hZ-Zjw" secondAttribute="leading" id="Ccc-24-q5n"/>
-                            <constraint firstItem="sII-J7-csu" firstAttribute="top" secondItem="gJ3-hZ-Zjw" secondAttribute="top" id="GTz-pZ-X8H"/>
-                            <constraint firstItem="sII-J7-csu" firstAttribute="top" secondItem="gJ3-hZ-Zjw" secondAttribute="top" id="QCh-tP-Bkj"/>
-                            <constraint firstItem="sII-J7-csu" firstAttribute="trailing" secondItem="gJ3-hZ-Zjw" secondAttribute="trailing" id="jmK-aW-m0t"/>
-                            <constraint firstItem="gJ3-hZ-Zjw" firstAttribute="bottom" secondItem="BnL-RK-ye3" secondAttribute="bottom" constant="20" id="smd-HG-f9N"/>
-                            <constraint firstItem="gJ3-hZ-Zjw" firstAttribute="trailing" secondItem="sII-J7-csu" secondAttribute="trailing" id="vk4-yh-Oe9"/>
-                            <constraint firstItem="sII-J7-csu" firstAttribute="bottom" secondItem="gJ3-hZ-Zjw" secondAttribute="bottom" id="wRr-xc-erF"/>
+                            <constraint firstItem="LGO-ZV-dEl" firstAttribute="centerX" secondItem="5Kp-RH-c7K" secondAttribute="centerX" id="0Vo-9f-Rwo"/>
+                            <constraint firstItem="aP6-YC-108" firstAttribute="leading" secondItem="gJ3-hZ-Zjw" secondAttribute="leading" id="2yU-5s-hZy"/>
+                            <constraint firstItem="gJ3-hZ-Zjw" firstAttribute="trailing" secondItem="aP6-YC-108" secondAttribute="trailing" id="EGm-UE-jOc"/>
+                            <constraint firstItem="gJ3-hZ-Zjw" firstAttribute="bottom" secondItem="LGO-ZV-dEl" secondAttribute="bottom" constant="20" id="ROo-PQ-X3K"/>
+                            <constraint firstItem="aP6-YC-108" firstAttribute="top" secondItem="gJ3-hZ-Zjw" secondAttribute="top" id="X4b-UY-kOI"/>
+                            <constraint firstItem="LGO-ZV-dEl" firstAttribute="top" secondItem="aP6-YC-108" secondAttribute="bottom" id="o5S-o2-75V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gJ3-hZ-Zjw"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="aP6-YC-108" id="uGp-Os-OnQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNx-7l-cVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
